@@ -18,7 +18,7 @@
 img{
     padding: var(--spacing);
     background: var(--base);
-    filter: blur(--blur);
+    filter: blur var(--blur);
     height: 400px;
 }
 hl{

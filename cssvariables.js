@@ -1,19 +1,17 @@
 const inputs = document.querySelectorAll("input");
+const root = document.documentElement
 
 const handleInput = (event) => {
-    //console.log(input)
+
     const currentInput = event.target;
    const suffix = currentInput.getAttribute("data-sizing") || "";
    const styleName = currentInput.getAttribute("name");
-   currentInput.style.setProperty(`--${styleName}`, `${currentInput.value}${suffix}`)
-   //console.log(event.target.getAttribute("data-sizing") || "")
+   root.style.setProperty(`--${styleName}`, `${currentInput.value}${suffix}`);
     };
 
 
 inputs.forEach((input) =>{
 input.addEventListener("change", handleInput)
 })
-
-
 
 
