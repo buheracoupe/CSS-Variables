@@ -21,7 +21,7 @@ img{
     filter: blur(var(--blur));
     height: 400px;
 }
-hl{
+.hl{
     color: var(--base);
 }
 
